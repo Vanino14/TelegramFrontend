@@ -61,7 +61,7 @@ const ModalConfirmation = ({ open, onClose, companyName}) => {
     };
   
     try {
-      const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/application/`+companyName, requestOptions);
+      const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/application/`+companyName, requestOptions);
   
       if (response.status === 200) {
         setSuccessMessage('Apps deleted successfully! Refreshing in 2s');

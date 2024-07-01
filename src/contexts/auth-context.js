@@ -85,7 +85,7 @@ export const AuthProvider = (props) => {
       withCredentials: true, // Mengizinkan pengiriman cookie dari server ke klien
     });
     try {
-      const response = await axiosInstance.get(`http://${process.env.NEXT_PUBLIC_DOMAIN}/admin/auth`, {
+      const response = await axiosInstance.get(`https://${process.env.NEXT_PUBLIC_DOMAIN}/admin/auth`, {
         headers: headers,
       });
       if (response.status === 200) {
@@ -155,7 +155,7 @@ export const AuthProvider = (props) => {
     formData.append("username", email);
     formData.append("password", password);
     try {
-      const response = await axios.post("http://"+process.env.NEXT_PUBLIC_DOMAIN+"/admin/login", formData);
+      const response = await axios.post("https://"+process.env.NEXT_PUBLIC_DOMAIN+"/admin/login", formData);
       if (response.status === 200) {
         console.log("Access granted");
         const result = response.data;
@@ -207,7 +207,7 @@ export const AuthProvider = (props) => {
     };
   
     try {
-      const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/admin/logout`, requestOptions);
+      const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/admin/logout`, requestOptions);
       const resultText = await response.text();
       console.log(resultText);
   

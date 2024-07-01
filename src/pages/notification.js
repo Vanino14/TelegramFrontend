@@ -53,7 +53,7 @@ const Page = () => {
     };
 
     try {
-      const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/message/allmessage`, requestOptions);
+      const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/message/allmessage`, requestOptions);
       const responseData = await response.json();
 
       if (response.status === 200) {

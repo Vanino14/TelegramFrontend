@@ -89,7 +89,7 @@ const fetchData = async () => {
   };
 
   try {
-    const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/message/statistic/monthly`, requestOptions);
+    const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/message/statistic/monthly`, requestOptions);
     const responseData = await response.json();
 
     if (response.status === 200) {
@@ -104,7 +104,7 @@ const fetchData = async () => {
     // Handle the error, maybe show an error message to the user
   }
   try {
-    const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/applications`, requestOptions);
+    const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/applications`, requestOptions);
     const responseData = await response.json();
 
     if (response.status === 200) {
@@ -119,7 +119,7 @@ const fetchData = async () => {
     // Handle the error, maybe show an error message to the user
   }
   try {
-    const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/users`, requestOptions);
+    const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/users`, requestOptions);
     const responseData = await response.json();
 
     if (response.status === 200) {
@@ -134,7 +134,7 @@ const fetchData = async () => {
     // Handle the error, maybe show an error message to the user
   }
   try {
-    const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/message/allmessage`, requestOptions);
+    const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/message/allmessage`, requestOptions);
     const responseData = await response.json();
 
     if (response.status === 200) {
@@ -148,7 +148,7 @@ const fetchData = async () => {
     console.error("Error during Chats fetch:", error);
     // Handle the error, maybe show an error message to the user
   }try {
-    const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/message/statistic/daily`, requestOptions);
+    const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/message/statistic/daily`, requestOptions);
     const responseData = await response.json();
 
     if (response.status === 200) {

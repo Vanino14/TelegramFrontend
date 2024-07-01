@@ -22,7 +22,7 @@ const AuthCheckOnPageChange = () => {
           credentials: 'include',
         };
 
-        const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/admin/auth`, requestOptions);
+        const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/admin/auth`, requestOptions);
 
         if (response.status === 200) {
           // console.log(response.status);

@@ -79,7 +79,7 @@ const handleSubmit= async()=>{
   };
 
   try {
-    const response = await fetch(`http://${process.env.NEXT_PUBLIC_DOMAIN}/application/register`, requestOptions);
+    const response = await fetch(`https://${process.env.NEXT_PUBLIC_DOMAIN}/application/register`, requestOptions);
 
     if (response.status === 200) {
       setSuccessMessage('Apps Created successfully! Refreshing in 2s');
