@@ -25,8 +25,8 @@ const Page = () => {
   const [method, setMethod] = useState('username');
   const formik = useFormik({
     initialValues: {
-      username: 'defaultAdmin',
-      password: 'TEST123',
+      username:null,
+      password: null,
       submit: null
     },
     validationSchema: Yup.object({
